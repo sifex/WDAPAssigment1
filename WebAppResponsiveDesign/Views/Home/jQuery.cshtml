@@ -1,0 +1,79 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        $("#jquery").click(function () {
+            $("#maindiv").css("height", "250px");
+            $("#maindiv").css("font-size", "88px");
+            $("#maindiv").html("<b>jQuery</b>");
+        });
+
+        $("#maindiv").mouseenter(function () {
+            $("#maindiv").html("<div id='jquerydiv' style='margin:10px; height:300px; with:100%;'></div>");
+            $("#jquerydiv").css("background-image", "url('../images/jquery.jpg')");
+            $("#jquerydiv").css("background-size", "50%");
+            $("#jquerydiv").css("background-repeat", "no-repeat");
+            $("#jquerydiv").css("display", "none");
+            $("#jquerydiv").slideDown("slow");
+        });
+
+        $("#maindiv").mouseleave(function () {
+            $("#jquerydiv").slideUp("slow", function () {
+                $("#maindiv").html("<b>jQuery</b>");
+            });
+        });
+    });
+</script>
+
+<h2 id="jquery">jQuery</h2>
+<div id="maindiv"></div>
+
+<div class="container-fluid" id="elastic_grid"></div>
+
+<!-- Elastic grid -->
+<script type="text/javascript">
+        $(function(){
+            $("#elastic_grid").elastic_grid({
+                'showAllText' : 'All',
+                'filterEffect': 'popup',
+                'hoverDirection': true,
+                'hoverDelay': 0,
+                'hoverInverse': false,
+                'expandingSpeed': 500,
+                'expandingHeight': 364,
+                'items' :
+                [
+                    {
+                        'title': 'Jewel of India <hr/> <a class="btn btn-primary">More Details</a>',
+                        'description': '<h4>India is synonymous with curries. They have such a range of different flavoured, coloured and spicy curries. So much to try!</h4>',
+                        'thumbnail': ['/images/jewel_small.jpg'],
+                        'large'         : ['/images/jewel.jpg'],
+                        'button_list'   :
+                        [
+                            { 'title': 'Visit Website', 'url': 'http://www.jewelofindia.com.au/', 'new_window': true },
+                        ],
+                        'tags'          : ['Indian']
+                    },
+
+                    {
+                        'title': 'Italian and Sons <hr/> <a class="btn btn-primary">More Details</a>',
+                        'description'   : '<h4>A casual Italian trattoria that specialises in wood fired pizzas such as Rucola with Prosciutto di Parma, rucola \& reggiano. Don\'t miss daily changing main dishes of the day such as their wood roast suckling pig, rosemary, garlic, baked baby fennel \& mustard fruits.</h4>',
+                        'thumbnail'     : ['/images/is_small.jpg'],
+                        'large': ['/images/is.jpg'],
+                        'button_list'   :
+                        [
+                            { 'title': 'Visit Website', 'url': 'http://italianandsons.com.au/', 'new_window': true },
+                        ],
+                        'tags'          : ['Italian']
+                    },
+                ]
+            });
+        });
+</script>
