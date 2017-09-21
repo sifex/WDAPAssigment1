@@ -62,11 +62,12 @@ textarea {
 				h4 {
 					color: #FFF;
 					font-weight: 400;
-					margin-bottom: -10px;
+					// margin-bottom: -10px;
+
 				}
 
 				.niconne {
-
+					line-height: 1;
 				}
 			}
 		}
@@ -474,6 +475,102 @@ textarea {
 					margin-bottom: -10px;
 				}
 			}
+		}
+	}
+}
+
+
+#pricing {
+	.oxygen {
+		font-family: 'Oxygen', sans-serif;
+		font-size: 26px;
+		color: white;
+	}
+
+	.niconne {
+		font-family: 'Niconne', cursive;
+		color: $yellow;
+		font-size: 55px;
+	}
+	.parallax_scrolling {
+		margin: 0;
+		background-image: url('https://images.unsplash.com/photo-1464500422302-6188776dcbf3?dpr=2&auto=format&fit=crop&w=1500&h=914&q=80&cs=tinysrgb&crop=');
+		background-size: cover;
+		background-position: center;
+
+
+		.dark_background {
+			background-color: rgba(0,0,0,0.8);
+			padding: 150px 0;
+			padding-bottom: 50px;
+
+			.top {
+				margin-bottom: 150px;
+
+				.oxygen {
+					display: block;
+					max-width: 400px;
+					border: 3px solid #FFF;
+					letter-spacing: 5px;
+					text-transform: uppercase;
+					padding: 20px;
+					text-align: center;
+					margin: 0 auto;
+				}
+			}
+
+			.bottom {
+				text-align: center;
+
+				h4 {
+					color: #FFF;
+					font-weight: 400;
+					margin-bottom: -10px;
+				}
+			}
+		}
+	}
+
+	section#two-col {
+		padding: 100px 0;
+		.oxygen {
+			font-size: 18px;
+			color: #000;
+			text-transform: uppercase;
+			letter-spacing: 9px;
+		}
+		.row {
+
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+	}
+	table {
+		.oxygen {
+			color: #000;
+		}
+
+		.item {
+
+						display: flex;
+						align-items: center;
+						justify-content: center;
+		}
+	}
+
+	.price {
+		&.dollar\$ {
+			color: #46863e;
+		}
+		&.dollar\$\$ {
+			color: #82863e;
+		}
+		&.dollar\$\$\$ {
+			color: #b47440;
+		}
+		&.dollar\$\$\$\$ {
+			color: #e0563e;
 		}
 	}
 }

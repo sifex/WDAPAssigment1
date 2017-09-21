@@ -48,8 +48,9 @@ textarea {
       text-align: center; }
       #home .parallax_scrolling .dark_background .bottom h4 {
         color: #FFF;
-        font-weight: 400;
-        margin-bottom: -10px; }
+        font-weight: 400; }
+      #home .parallax_scrolling .dark_background .bottom .niconne {
+        line-height: 1; }
 
 #home section#welcome {
   padding-top: 100px;
@@ -326,3 +327,72 @@ textarea {
         color: #FFF;
         font-weight: 400;
         margin-bottom: -10px; }
+
+#pricing .oxygen {
+  font-family: 'Oxygen', sans-serif;
+  font-size: 26px;
+  color: white; }
+
+#pricing .niconne {
+  font-family: 'Niconne', cursive;
+  color: #f8bd08;
+  font-size: 55px; }
+
+#pricing .parallax_scrolling {
+  margin: 0;
+  background-image: url("https://images.unsplash.com/photo-1464500422302-6188776dcbf3?dpr=2&auto=format&fit=crop&w=1500&h=914&q=80&cs=tinysrgb&crop=");
+  background-size: cover;
+  background-position: center; }
+  #pricing .parallax_scrolling .dark_background {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 150px 0;
+    padding-bottom: 50px; }
+    #pricing .parallax_scrolling .dark_background .top {
+      margin-bottom: 150px; }
+      #pricing .parallax_scrolling .dark_background .top .oxygen {
+        display: block;
+        max-width: 400px;
+        border: 3px solid #FFF;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        padding: 20px;
+        text-align: center;
+        margin: 0 auto; }
+    #pricing .parallax_scrolling .dark_background .bottom {
+      text-align: center; }
+      #pricing .parallax_scrolling .dark_background .bottom h4 {
+        color: #FFF;
+        font-weight: 400;
+        margin-bottom: -10px; }
+
+#pricing section#two-col {
+  padding: 100px 0; }
+  #pricing section#two-col .oxygen {
+    font-size: 18px;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 9px; }
+  #pricing section#two-col .row {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+
+#pricing table .oxygen {
+  color: #000; }
+
+#pricing table .item {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+#pricing .price.dollar\$ {
+  color: #46863e; }
+
+#pricing .price.dollar\$\$ {
+  color: #82863e; }
+
+#pricing .price.dollar\$\$\$ {
+  color: #b47440; }
+
+#pricing .price.dollar\$\$\$\$ {
+  color: #e0563e; }

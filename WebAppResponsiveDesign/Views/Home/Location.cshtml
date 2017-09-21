@@ -13,6 +13,7 @@ function generateHTMLforMarkerPopup(imageURL, name, content) {
 		</div>
 		<div class="col-sm-8">
 			<p>` + content + `</p>
+			<a href="#" class="btn btn-primary">Click to go to this Restaurant</a>
 		</div>
 
 	</div>`;
@@ -27,7 +28,7 @@ function addMarker(lat, long, map, img, name, content) {
 	marker.setMap(map);
 
 	var infoWindow = new google.maps.InfoWindow({
-		content: generateHTMLforMarkerPopup('', 'Italian and Sons', 'Big long paragraph')
+		content: generateHTMLforMarkerPopup(img, name, content)
 	});
 
 	google.maps.event.addListener(marker, 'click', function () {
