@@ -21461,10 +21461,10 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/alex/Downloads/WebAppResponsiveDesign/WebAppResponsiveDesign/WebAppResponsiveDesign.csproj",
+      "projectUniqueName": "/Users/alex/Desktop/WDaP Assignemtn 1/WebAppResponsiveDesign/WebAppResponsiveDesign.csproj",
       "projectName": "WebAppResponsiveDesign",
-      "projectPath": "/Users/alex/Downloads/WebAppResponsiveDesign/WebAppResponsiveDesign/WebAppResponsiveDesign.csproj",
-      "outputPath": "/Users/alex/Downloads/WebAppResponsiveDesign/WebAppResponsiveDesign/obj",
+      "projectPath": "/Users/alex/Desktop/WDaP Assignemtn 1/WebAppResponsiveDesign/WebAppResponsiveDesign.csproj",
+      "outputPath": "/Users/alex/Desktop/WDaP Assignemtn 1/WebAppResponsiveDesign/obj",
       "projectStyle": "PackageReference",
       "originalTargetFrameworks": [
         "netcoreapp1.1"

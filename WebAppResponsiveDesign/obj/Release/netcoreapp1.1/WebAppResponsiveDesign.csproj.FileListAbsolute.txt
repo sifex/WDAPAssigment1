@@ -20,3 +20,14 @@
 /Users/alex/Downloads/WebAppResponsiveDesign/WebAppResponsiveDesign/obj/Release/netcoreapp1.1/WebAppResponsiveDesign.AssemblyInfo.cs
 /Users/alex/Downloads/WebAppResponsiveDesign/WebAppResponsiveDesign/obj/Release/netcoreapp1.1/WebAppResponsiveDesign.dll
 /Users/alex/Downloads/WebAppResponsiveDesign/WebAppResponsiveDesign/obj/Release/netcoreapp1.1/WebAppResponsiveDesign.pdb
+/Users/alex/Desktop/WDaP Assignemtn 1/WebAppResponsiveDesign/bin/Release/netcoreapp1.1/WebAppResponsiveDesign.deps.json
+/Users/alex/Desktop/WDaP Assignemtn 1/WebAppResponsiveDesign/bin/Release/netcoreapp1.1/WebAppResponsiveDesign.runtimeconfig.json
+/Users/alex/Desktop/WDaP Assignemtn 1/WebAppResponsiveDesign/bin/Release/netcoreapp1.1/WebAppResponsiveDesign.runtimeconfig.dev.json
+/Users/alex/Desktop/WDaP Assignemtn 1/WebAppResponsiveDesign/bin/Release/netcoreapp1.1/WebAppResponsiveDesign.dll
+/Users/alex/Desktop/WDaP Assignemtn 1/WebAppResponsiveDesign/bin/Release/netcoreapp1.1/WebAppResponsiveDesign.pdb
+/Users/alex/Desktop/WDaP Assignemtn 1/WebAppResponsiveDesign/obj/Release/netcoreapp1.1/WebAppResponsiveDesign.csprojResolveAssemblyReference.cache
+/Users/alex/Desktop/WDaP Assignemtn 1/WebAppResponsiveDesign/obj/Release/netcoreapp1.1/WebAppResponsiveDesign.csproj.CoreCompileInputs.cache
+/Users/alex/Desktop/WDaP Assignemtn 1/WebAppResponsiveDesign/obj/Release/netcoreapp1.1/WebAppResponsiveDesign.AssemblyInfoInputs.cache
+/Users/alex/Desktop/WDaP Assignemtn 1/WebAppResponsiveDesign/obj/Release/netcoreapp1.1/WebAppResponsiveDesign.AssemblyInfo.cs
+/Users/alex/Desktop/WDaP Assignemtn 1/WebAppResponsiveDesign/obj/Release/netcoreapp1.1/WebAppResponsiveDesign.dll
+/Users/alex/Desktop/WDaP Assignemtn 1/WebAppResponsiveDesign/obj/Release/netcoreapp1.1/WebAppResponsiveDesign.pdb

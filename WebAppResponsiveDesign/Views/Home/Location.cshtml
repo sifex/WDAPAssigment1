@@ -1,0 +1,105 @@
+@{ ViewData["Title"] = "Location"; }
+
+<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCAFAzJ7TMBbnCUEqYzgtzk0jvs0BVkOK4"></script>
+
+<script>
+
+function generateHTMLforMarkerPopup(imageURL, name, content) {
+	return "<h4>" + name + "</h4>" +
+
+	`<div class="row" style="">
+		<div class="col-sm-4">
+			<img src="` + imageURL + `" alt="" />
+		</div>
+		<div class="col-sm-8">
+			<p>` + content + `</p>
+		</div>
+
+	</div>`;
+}
+
+function addMarker(lat, long, map, img, name, content) {
+	var latlng = new google.maps.LatLng(lat, long);
+	var marker = new google.maps.Marker({
+		position: latlng,
+	});
+
+	marker.setMap(map);
+
+	var infoWindow = new google.maps.InfoWindow({
+		content: generateHTMLforMarkerPopup('', 'Italian and Sons', 'Big long paragraph')
+	});
+
+	google.maps.event.addListener(marker, 'click', function () {
+		infoWindow.open(map, marker);
+	});
+}
+
+
+// Declare a variable for map
+ var map;
+ // Get lattitude and longitude of Canberra Centre
+ var canberraCentre = new google.maps.LatLng(-35.2792284, 149.1321033);
+
+// Initialise the map
+function initMap() {
+	// Define the properties for Canberra Centre map
+	var canberraMap = {
+		center: canberraCentre,
+		zoom: 13,
+		mapTypeId: google.maps.MapTypeId.ROADMAP
+	};
+
+	// Create a map object for Canberra Centre
+	// using canberraMap and the <div> element with id="googleMap"
+	map = new google.maps.Map(
+		document.getElementById("googleMap"), canberraMap);
+
+		// Add markers below this line
+		addMarker(-35.275011, 149.132289, map, 'https://static1.squarespace.com/static/5806e22ec534a5bab1dbc80f/t/5806e29b03596ed3a8686919/1501683707762/', 'Italian and Sons', `"A casual Italian trattoria that specialises in wood fired pizzas such as Rucola with Prosciutto di Parma, rucola & reggiano. Don't miss daily changing main dishes of the day such as their wood roast sucking pig, rosemary, garlic, baked baby fennel & mustard fruits" – Australian good Food Guide`);
+
+		addMarker(-35.277750, 149.132790, map, 'https://i.ebayimg.com/00/s/NTIyWDE2MDA=/z/aYgAAOSwstJZXFld/$_20.PNG', "Jamie's Italian", `"A casual Italian trattoria that specialises in wood fired pizzas such as Rucola with Prosciutto di Parma, rucola & reggiano. Don't miss daily changing main dishes of the day such as their wood roast sucking pig, rosemary, garlic, baked baby fennel & mustard fruits" – Australian good Food Guide`);
+
+		addMarker(-35.311657, 149.133944, map, 'http://www.sofrank.com.au/wp-content/uploads/2016/03/Chairman-Yip-1.jpg', "Chairman and Yip", `"A casual Italian trattoria that specialises in wood fired pizzas such as Rucola with Prosciutto di Parma, rucola & reggiano. Don't miss daily changing main dishes of the day such as their wood roast sucking pig, rosemary, garlic, baked baby fennel & mustard fruits" – Australian good Food Guide`);
+
+		addMarker(-35.250413, 149.136285, map, 'http://www.noodlehouse.net.au/Noodle_house/Welcome_files/NH_%5BB%5D_colour.jpg', "Dickson Asian Noodle House", `"A casual Italian trattoria that specialises in wood fired pizzas such as Rucola with Prosciutto di Parma, rucola & reggiano. Don't miss daily changing main dishes of the day such as their wood roast sucking pig, rosemary, garlic, baked baby fennel & mustard fruits" – Australian good Food Guide`);
+
+		addMarker(-35.277357, 149.132021, map, 'https://s0.yellowpages.com.au/bc0435f1-1530-4d05-a9fb-d4aead5e12c9/blu-ginger-indian-restaurant-canberra-2601-thumbnail.PNG', "Blue Ginger", `"A casual Italian trattoria that specialises in wood fired pizzas such as Rucola with Prosciutto di Parma, rucola & reggiano. Don't miss daily changing main dishes of the day such as their wood roast sucking pig, rosemary, garlic, baked baby fennel & mustard fruits" – Australian good Food Guide`);
+
+
+		addMarker(-35.320729, 149.132731, map, 'http://www.jewel-of-india.ca/cuisine/images/Jewel%20Of%20india%20LOGO-600dpi-fromeps-1-800-2.png', "Jewel of India", `"A casual Italian trattoria that specialises in wood fired pizzas such as Rucola with Prosciutto di Parma, rucola & reggiano. Don't miss daily changing main dishes of the day such as their wood roast sucking pig, rosemary, garlic, baked baby fennel & mustard fruits" – Australian good Food Guide`);
+
+
+	}
+	// Add other functions below this line
+
+	// Add a DOM listener that will execute the initMap function
+	// on window load (when the page is loaded)
+	google.maps.event.addDomListener(window, 'load', initMap);
+	</script>
+
+
+
+<div id="location">
+	<div class="parallax_scrolling">
+		<div class="dark_background">
+			<div class="row" style="">
+				<div class="col-sm-2">
+				</div>
+				<div class="col-sm-8">
+					<div class="top">
+						<h1 class="oxygen">Canberra <br>Restaurants</h1>
+					</div>
+					<div class="bottom">
+						<p class="niconne">Restaurant Locations</p>
+					</div>
+				</div>
+				<div class="col-sm-2">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="googleMap" style="width:100%;height:800px;"></div>
+
+</div>

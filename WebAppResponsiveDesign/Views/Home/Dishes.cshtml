@@ -1,0 +1,167 @@
+@{ ViewData["Title"] = "Dishes"; }
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+</script>
+<section id="dishes">
+
+	<div class="parallax_scrolling">
+		<div class="dark_background">
+			<div class="row" style="">
+				<div class="col-sm-2">
+				</div>
+				<div class="col-sm-8">
+					<div class="top">
+						<h1 class="oxygen">Canberra <br>Restaurants</h1>
+					</div>
+					<div class="bottom">
+						<p class="niconne">Cuisine</p>
+					</div>
+				</div>
+				<div class="col-sm-2">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<section id="two-col">
+		<div class="container-fluid row">
+			<div class="col-sm-1"></div>
+			<div class="col-sm-5">
+				<h3 class="oxygen">A Dish for Every Taste</h3>
+				<p>Whehterh you're after the tastes of the Medeteranian or some oriental delights, then Canberra has the restaurant for you.</p>
+				<p>Check out what's on offer by selecting a cuisine from the menu below.</p>
+			</div>
+
+			<div class="col-sm-5">
+				<div class="col-xs-6" style="">
+					<img src="~/images/burger.jpg" />
+				</div>
+
+				<div class="col-xs-6" style="">
+					<img src="~/images/pasta.jpg" />
+				</div>
+			</div>
+			<div class="col-sm-1"></div>
+		</div>
+	</section>
+
+	<script>
+		$(document).ready(function() {
+			$("#jquery").click(function() {
+				$("#maindiv").css("height", "250px");
+				$("#maindiv").css("font-size", "88px");
+				$("#maindiv").html("<b>jQuery</b>");
+			});
+
+			$("#maindiv").mouseenter(function() {
+				$("#maindiv").html("<div id='jquerydiv' style='margin:10px; height:300px; with:100%;'></div>");
+				$("#jquerydiv").css("background-image", "url('../images/jquery.jpg')");
+				$("#jquerydiv").css("background-size", "50%");
+				$("#jquerydiv").css("background-repeat", "no-repeat");
+				$("#jquerydiv").css("display", "none");
+				$("#jquerydiv").slideDown("slow");
+			});
+
+			$("#maindiv").mouseleave(function() {
+				$("#jquerydiv").slideUp("slow", function() {
+					$("#maindiv").html("<b>jQuery</b>");
+				});
+			});
+		});
+	</script>
+
+	<div class="container-fluid" id="elastic_grid"></div>
+</section>
+
+<!-- Elastic grid -->
+<script type="text/javascript">
+	$(function() {
+		$("#elastic_grid").elastic_grid({
+			'showAllText': 'All',
+			'filterEffect': 'popup',
+			'hoverDirection': true,
+			'hoverDelay': 0,
+			'hoverInverse': false,
+			'expandingSpeed': 500,
+			'expandingHeight': 200,
+			'items': [{
+					'title': 'Italian and Sons <hr/> <a class="btn btn-primary">More Details</a>',
+					'description': '<h4>India is synonymous with curries. They have such a range of different flavoured, coloured and spicy curries. So much to try!</h4>',
+					'thumbnail': ['http://api.rethumb.com/v1/square/250/https://pbs.twimg.com/profile_images/1192215476/logo_400x400.png'],
+					'large': ['https://pbs.twimg.com/profile_images/1192215476/logo_400x400.png'],
+					'button_list': [{
+						'title': 'Visit Website',
+						'url': 'http://www.jewelofindia.com.au/',
+						'new_window': true
+					}, ],
+					'tags': ['Pizza']
+				},
+
+				{
+					'title': 'Jamie\'s Italian <hr/> <a class="btn btn-primary">More Details</a>',
+					'description': '<h4>A casual Italian trattoria that specialises in wood fired pizzas such as Rucola with Prosciutto di Parma, rucola \& reggiano. Don\'t miss daily changing main dishes of the day such as their wood roast suckling pig, rosemary, garlic, baked baby fennel \& mustard fruits.</h4>',
+					'thumbnail': ['http://api.rethumb.com/v1/square/250/https://i.ebayimg.com/00/s/NTIyWDE2MDA=/z/aYgAAOSwstJZXFld/$_20.PNG'],
+					'large': ['https://i.ebayimg.com/00/s/NTIyWDE2MDA=/z/aYgAAOSwstJZXFld/$_20.PNG'],
+					'button_list': [{
+						'title': 'Visit Website',
+						'url': 'http://italianandsons.com.au/',
+						'new_window': true
+					}, ],
+					'tags': ['Pasta']
+				},
+
+				{
+					'title': 'Chairman and Yip <hr/> <a class="btn btn-primary">More Details</a>',
+					'description': '<h4>A casual Italian trattoria that specialises in wood fired pizzas such as Rucola with Prosciutto di Parma, rucola \& reggiano. Don\'t miss daily changing main dishes of the day such as their wood roast suckling pig, rosemary, garlic, baked baby fennel \& mustard fruits.</h4>',
+					'thumbnail': ['http://api.rethumb.com/v1/square/250/http://www.sofrank.com.au/wp-content/uploads/2016/03/Chairman-Yip-1-683x1024.jpg'],
+					'large': ['http://www.sofrank.com.au/wp-content/uploads/2016/03/Chairman-Yip-1-683x1024.jpg'],
+					'button_list': [{
+						'title': 'Visit Website',
+						'url': 'http://italianandsons.com.au/',
+						'new_window': true
+					}, ],
+					'tags': ['Dumplings']
+				},
+
+				{
+					'title': 'Asian Noodle House <hr/> <a class="btn btn-primary">More Details</a>',
+					'description': '<h4>A casual Italian trattoria that specialises in wood fired pizzas such as Rucola with Prosciutto di Parma, rucola \& reggiano. Don\'t miss daily changing main dishes of the day such as their wood roast suckling pig, rosemary, garlic, baked baby fennel \& mustard fruits.</h4>',
+					'thumbnail': ['http://api.rethumb.com/v1/square/250/http://www.noodlehouse.net.au/Noodle_house/Welcome_files/NH_%5BB%5D_colour.jpg'],
+					'large': ['http://www.noodlehouse.net.au/Noodle_house/Welcome_files/NH_%5BB%5D_colour.jpg'],
+					'button_list': [{
+						'title': 'Visit Website',
+						'url': 'http://italianandsons.com.au/',
+						'new_window': true
+					}, ],
+					'tags': ['Laksa']
+				},
+
+				{
+					'title': 'Blu Gingner <hr/> <a class="btn btn-primary">More Details</a>',
+					'description': '<h4>A casual Italian trattoria that specialises in wood fired pizzas such as Rucola with Prosciutto di Parma, rucola \& reggiano. Don\'t miss daily changing main dishes of the day such as their wood roast suckling pig, rosemary, garlic, baked baby fennel \& mustard fruits.</h4>',
+					'thumbnail': ['http://api.rethumb.com/v1/square/250/https://s0.yellowpages.com.au/bc0435f1-1530-4d05-a9fb-d4aead5e12c9/blu-ginger-indian-restaurant-canberra-2601-thumbnail.PNG'],
+					'large': ['https://s0.yellowpages.com.au/bc0435f1-1530-4d05-a9fb-d4aead5e12c9/blu-ginger-indian-restaurant-canberra-2601-thumbnail.PNG'],
+					'button_list': [{
+						'title': 'Visit Website',
+						'url': 'http://italianandsons.com.au/',
+						'new_window': true
+					}, ],
+					'tags': ['Curry']
+				},
+
+				{
+					'title': 'Jewel of India <hr/> <a class="btn btn-primary">More Details</a>',
+					'description': '<h4>A casual Italian trattoria that specialises in wood fired pizzas such as Rucola with Prosciutto di Parma, rucola \& reggiano. Don\'t miss daily changing main dishes of the day such as their wood roast suckling pig, rosemary, garlic, baked baby fennel \& mustard fruits.</h4>',
+					'thumbnail': ['http://api.rethumb.com/v1/square/250/http://www.jewel-of-india.ca/cuisine/images/Jewel%20Of%20india%20LOGO-600dpi-fromeps-1-800-2.png'],
+					'large': ['http://www.jewel-of-india.ca/cuisine/images/Jewel%20Of%20india%20LOGO-600dpi-fromeps-1-800-2.png'],
+					'button_list': [{
+						'title': 'Visit Website',
+						'url': 'http://italianandsons.com.au/',
+						'new_window': true
+					}, ],
+					'tags': ['Curry']
+				},
+			]
+		});
+	});
+</script>
